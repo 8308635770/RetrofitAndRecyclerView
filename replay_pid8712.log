@@ -1,0 +1,488 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 158 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 1901359 0 0
+ciMethod java/lang/String <init> ([CII)V 2889 1 5886 0 704
+ciMethod java/lang/String length ()I 3089 1 491227 0 -1
+ciMethod java/lang/String charAt (I)C 4097 1 1957105 0 -1
+ciMethod java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V 4097 1 512 0 -1
+ciMethod java/lang/Number <init> ()V 3585 1 41223 0 32
+ciMethod java/lang/Integer valueOf (I)Ljava/lang/Integer; 73 1 63825 0 192
+ciMethod java/lang/Integer <init> (I)V 2065 1 27792 0 0
+ciMethod java/lang/Math min (II)I 2945 1 168767 0 -1
+ciMethod java/util/Arrays copyOfRange ([CII)[C 3081 1 5528 0 512
+ciMethodData java/lang/Object <init> ()V 2 1901365 orig 264 88 29 214 119 0 0 0 0 128 4 136 23 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 169 9 232 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/lang/String charAt (I)C 2 1957105 orig 264 88 29 214 119 0 0 0 0 176 61 136 23 0 0 0 0 120 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 137 215 238 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 80 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 10 0x10007 0x0 0x40 0x1ddb16 0xa0007 0x1ddb1a 0x30 0x0 0x120002 0x0 oops 0
+ciMethodData java/lang/String length ()I 2 491227 orig 264 88 29 214 119 0 0 0 0 96 60 136 23 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 130 1 0 0 201 234 59 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/util/Arrays copyOfRange ([CII)[C 2 5528 orig 264 88 29 214 119 0 0 0 0 8 67 154 23 0 0 0 0 120 2 0 0 240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129 1 0 0 185 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 9 0 2 0 0 0 32 1 0 0 255 255 255 255 7 0 5 0 0 0 0 0 data 36 0x50007 0x1417 0x100 0x0 0x100002 0x0 0x140005 0x0 0x0 0x0 0x0 0x0 0x190005 0x0 0x0 0x0 0x0 0x0 0x1d0005 0x0 0x0 0x0 0x0 0x0 0x200005 0x0 0x0 0x0 0x0 0x0 0x230002 0x0 0x360002 0x1417 0x390002 0x1417 oops 0
+ciMethodData java/lang/String <init> ([CII)V 2 5886 orig 264 88 29 214 119 0 0 0 0 160 49 136 23 0 0 0 0 80 2 0 0 208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105 1 0 0 169 172 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 14 0 2 0 0 0 240 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 30 0x10002 0x1595 0x50007 0x1595 0x30 0x0 0xd0002 0x0 0x120007 0x158b 0x70 0xa 0x160007 0xa 0x30 0x0 0x1e0002 0x0 0x250007 0x0 0x20 0xa 0x370007 0x158b 0x30 0x0 0x410002 0x0 0x4b0002 0x158b oops 0
+ciMethodData java/lang/Number <init> ()V 2 41223 orig 264 88 29 214 119 0 0 0 0 232 254 145 23 0 0 0 0 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 191 1 0 0 57 250 4 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x9f46 oops 0
+ciMethodData java/lang/Integer valueOf (I)Ljava/lang/Integer; 2 65094 orig 264 88 29 214 119 0 0 0 0 168 107 146 23 0 0 0 0 112 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 233 241 7 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 80 0 0 0 255 255 255 255 7 0 3 0 0 0 0 0 data 10 0x30007 0x13 0x40 0xfe29 0xa0007 0x6a8d 0x20 0x938e 0x1c0002 0x6aa0 oops 0
+ciMethodData java/lang/Integer <init> (I)V 2 27792 orig 264 88 29 214 119 0 0 0 0 72 108 146 23 0 0 0 0 56 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 113 92 3 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x6b8e oops 0
+ciMethod org/objectweb/asm/ClassReader readByte (I)I 0 0 1 0 0
+ciMethod org/objectweb/asm/ClassReader readUnsignedShort (I)I 2393 1 30902 0 160
+ciMethod org/objectweb/asm/ClassReader readInt (I)I 39745 1 13680 0 192
+ciMethod org/objectweb/asm/ClassReader readLong (I)J 0 0 1 0 0
+ciMethod org/objectweb/asm/ClassReader readUTF8 (I[C)Ljava/lang/String; 17113 1 19802 0 0
+ciMethod org/objectweb/asm/ClassReader readUtf (I[C)Ljava/lang/String; 4097 1 20103 0 0
+ciMethod org/objectweb/asm/ClassReader readUtf (II[C)Ljava/lang/String; 1721 32769 5493 0 1376
+ciMethod org/objectweb/asm/ClassReader readStringish (I[C)Ljava/lang/String; 4097 1 1301 0 -1
+ciMethod org/objectweb/asm/ClassReader readClass (I[C)Ljava/lang/String; 4097 1 1284 0 0
+ciMethod org/objectweb/asm/ClassReader readConstantDynamic (I[C)Lorg/objectweb/asm/ConstantDynamic; 0 0 1 0 0
+ciMethod org/objectweb/asm/ClassReader readConst (I[C)Ljava/lang/Object; 4097 1 5649 0 -1
+ciMethodData org/objectweb/asm/ClassReader readUnsignedShort (I)I 2 31697 orig 264 88 29 214 119 0 0 0 0 200 170 171 48 0 0 0 0 40 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 1 0 0 49 213 3 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData org/objectweb/asm/ClassReader readUtf (II[C)Ljava/lang/String; 2 116299 orig 264 88 29 214 119 0 0 0 0 240 176 171 48 0 0 0 0 248 1 0 0 144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 241 164 0 0 89 178 13 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 11 0 2 0 0 0 184 0 0 0 255 255 255 255 7 0 22 0 0 0 0 0 data 23 0x160007 0x1496 0xa8 0x1b657 0x290007 0x2 0x38 0x1b652 0x390003 0x1b654 0x50 0x450007 0x2 0x38 0x0 0x640003 0x0 0x18 0x920003 0x1b647 0xffffffffffffff70 0x9d0002 0x1499 oops 0
+ciMethodData org/objectweb/asm/ClassReader readUTF8 (I[C)Ljava/lang/String; 2 20259 orig 264 88 29 214 119 0 0 0 0 64 174 171 48 0 0 0 0 248 1 0 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 97 56 2 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 8 0 2 0 0 0 160 0 0 0 255 255 255 255 5 0 2 0 0 0 0 0 data 20 0x20005 0x0 0x2062bb90 0x46fa 0x0 0x0 0x70007 0x3 0x40 0x4702 0xb0007 0x46fd 0x20 0x3 0x130005 0x1d82 0x2062bb90 0x297a 0x0 0x0 oops 2 2 org/objectweb/asm/ClassReader 16 org/objectweb/asm/ClassReader
+ciMethodData org/objectweb/asm/ClassReader readUtf (I[C)Ljava/lang/String; 2 20268 orig 264 88 29 214 119 0 0 0 0 64 175 171 48 0 0 0 0 232 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 97 105 2 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 5 0 2 0 0 0 144 0 0 0 255 255 255 255 7 0 8 0 0 0 0 0 data 18 0x80007 0x1d99 0x20 0x2fa4 0x220005 0x0 0x2062bb90 0x1d9d 0x0 0x0 0x260002 0x1d9d 0x2a0004 0x0 0x2cda610 0x1da0 0x0 0x0 oops 2 6 org/objectweb/asm/ClassReader 14 java/lang/String
+ciMethodData org/objectweb/asm/ClassReader readInt (I)I 2 13680 orig 264 88 29 214 119 0 0 0 0 128 172 171 48 0 0 0 0 40 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 65 16 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData org/objectweb/asm/ClassReader readConst (I[C)Ljava/lang/Object; 2 5649 orig 264 88 29 214 119 0 0 0 0 8 184 171 48 0 0 0 0 192 5 0 0 32 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 137 160 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 69 0 2 0 0 0 104 4 0 0 255 255 255 255 8 0 15 0 0 0 0 0 data 141 0xf0008 0x20 0x0 0x458 0xc95 0x110 0x0 0x150 0x0 0x1a0 0x0 0x1e0 0x3 0x230 0x1d 0x270 0x0 0x458 0x0 0x458 0x0 0x458 0x0 0x458 0x0 0x458 0x0 0x458 0x0 0x2e0 0x0 0x2a0 0x0 0x448 0x5a0005 0x0 0x2062bb90 0x13f1 0x0 0x0 0x5d0002 0x13f1 0x630005 0x0 0x0 0x0 0x0 0x0 0x660002 0x0 0x690002 0x0 0x6f0005 0x0 0x0 0x0 0x0 0x0 0x720002 0x0 0x780005 0x0 0x0 0x0 0x0 0x0 0x7b0002 0x0 0x7e0002 0x0 0x850005 0x0 0x2062bb90 0x3 0x0 0x0 0x880002 0x3 0x8f0005 0x0 0x2062bb90 0x1d 0x0 0x0 0x960005 0x0 0x0 0x0 0x0 0x0 0x990002 0x0 0x9f0005 0x0 0x0 0x0 0x0 0x0 0xac0005 0x0 0x0 0x0 0x0 0x0 0xbb0005 0x0 0x0 0x0 0x0 0x0 0xc50005 0x0 0x0 0x0 0x0 0x0 0xce0005 0x0 0x0 0x0 0x0 0x0 0xd90005 0x0 0x0 0x0 0x0 0x0 0xe90007 0x0 0x38 0x0 0xed0003 0x0 0x18 0x1010002 0x0 0x1080002 0x0 0x1100002 0x0 oops 3 36 org/objectweb/asm/ClassReader 72 org/objectweb/asm/ClassReader 80 org/objectweb/asm/ClassReader
+ciMethod org/objectweb/asm/Type <init> (ILjava/lang/String;II)V 97 1 12 0 -1
+ciMethod org/objectweb/asm/Type getObjectType (Ljava/lang/String;)Lorg/objectweb/asm/Type; 25 1 3 0 0
+ciMethod org/objectweb/asm/Type getMethodType (Ljava/lang/String;)Lorg/objectweb/asm/Type; 0 0 1 0 0
+ciMethodData org/objectweb/asm/ClassReader readClass (I[C)Ljava/lang/String; 1 1457 orig 264 88 29 214 119 0 0 0 0 120 178 171 48 0 0 0 0 64 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 137 29 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 10 0 2 0 0 0 16 0 0 0 255 255 255 255 2 0 3 0 0 0 0 0 data 2 0x30002 0x3b1 oops 0
+ciMethodData org/objectweb/asm/ClassReader readStringish (I[C)Ljava/lang/String; 1 1457 orig 264 88 29 214 119 0 0 0 0 184 177 171 48 0 0 0 0 184 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 137 29 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 9 0 2 0 0 0 96 0 0 0 255 255 255 255 5 0 7 0 0 0 0 0 data 12 0x70005 0x0 0x2062bb90 0x3b1 0x0 0x0 0xc0005 0x0 0x2062bb90 0x3b1 0x0 0x0 oops 2 2 org/objectweb/asm/ClassReader 8 org/objectweb/asm/ClassReader
+ciMethodData org/objectweb/asm/ClassReader readLong (I)J 1 0 orig 264 88 29 214 119 0 0 0 0 96 173 171 48 0 0 0 0 176 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 96 0 0 0 255 255 255 255 5 0 2 0 0 0 0 0 data 12 0x20005 0x0 0x0 0x0 0x0 0x0 0xb0005 0x0 0x0 0x0 0x0 0x0 oops 0
+ciMethodData org/objectweb/asm/Type getObjectType (Ljava/lang/String;)Lorg/objectweb/asm/Type; 1 3 orig 264 88 29 214 119 0 0 0 0 8 2 173 48 0 0 0 0 240 1 0 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 168 0 0 0 255 255 255 255 5 0 6 0 0 0 0 0 data 21 0x60005 0x0 0x0 0x0 0x0 0x0 0xb0007 0x0 0x38 0x0 0x100003 0x0 0x18 0x180005 0x0 0x0 0x0 0x0 0x0 0x1b0002 0x0 oops 0
+ciMethodData org/objectweb/asm/Type <init> (ILjava/lang/String;II)V 1 12 orig 264 88 29 214 119 0 0 0 0 96 253 172 48 0 0 0 0 80 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 255 255 255 255 2 0 1 0 0 0 0 0 data 2 0x10002 0x0 oops 0
+ciMethodData org/objectweb/asm/ClassReader readByte (I)I 1 0 orig 264 88 29 214 119 0 0 0 0 248 169 171 48 0 0 0 0 40 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData org/objectweb/asm/Type getMethodType (Ljava/lang/String;)Lorg/objectweb/asm/Type; 1 0 orig 264 88 29 214 119 0 0 0 0 184 2 173 48 0 0 0 0 136 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 64 0 0 0 255 255 255 255 5 0 9 0 0 0 0 0 data 8 0x90005 0x0 0x0 0x0 0x0 0x0 0xc0002 0x0 oops 0
+ciMethodData org/objectweb/asm/ClassReader readConstantDynamic (I[C)Lorg/objectweb/asm/ConstantDynamic; 1 0 orig 264 88 29 214 119 0 0 0 0 200 181 171 48 0 0 0 0 0 4 0 0 112 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 168 2 0 0 255 255 255 255 7 0 8 0 0 0 0 0 data 85 0x80007 0x0 0x20 0x0 0x1e0005 0x0 0x0 0x0 0x0 0x0 0x280005 0x0 0x0 0x0 0x0 0x0 0x330005 0x0 0x0 0x0 0x0 0x0 0x3f0005 0x0 0x0 0x0 0x0 0x0 0x490005 0x0 0x0 0x0 0x0 0x0 0x4d0005 0x0 0x0 0x0 0x0 0x0 0x500004 0x0 0x0 0x0 0x0 0x0 0x5a0005 0x0 0x0 0x0 0x0 0x0 0x6d0007 0x0 0xc8 0x0 0x780005 0x0 0x0 0x0 0x0 0x0 0x7c0005 0x0 0x0 0x0 0x0 0x0 0x7f0004 0x0 0x0 0x0 0x0 0x0 0x860003 0x0 0xffffffffffffff50 0x9a0002 0x0 0x9e0004 0x0 0x0 0x0 0x0 0x0 oops 0
+instanceKlass org/objectweb/asm/Type
+instanceKlass org/objectweb/asm/ConstantDynamic
+instanceKlass org/objectweb/asm/Label
+instanceKlass com/android/builder/desugaring/DesugaringData
+instanceKlass org/objectweb/asm/Context
+instanceKlass org/objectweb/asm/Attribute
+instanceKlass org/objectweb/asm/MethodVisitor
+instanceKlass org/objectweb/asm/ClassReader
+instanceKlass com/android/builder/dexing/ClassFileInput$$Lambda$825
+instanceKlass com/android/builder/dexing/ClassFileInput
+instanceKlass com/android/builder/utils/ZipEntryUtils
+instanceKlass java/util/zip/ZipFile$ZipEntryIterator
+instanceKlass java/nio/file/SimpleFileVisitor
+instanceKlass org/objectweb/asm/ClassVisitor
+instanceKlass com/android/builder/desugaring/DesugaringClassAnalyzer
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$824
+instanceKlass com/google/common/collect/TransformedIterator
+instanceKlass com/google/common/collect/Iterators$ConcatenatedIterator
+instanceKlass com/android/builder/desugaring/TypePaths
+instanceKlass com/android/builder/desugaring/TypeDependencies
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$823
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$822
+instanceKlass com/android/build/gradle/internal/tasks/DexArchiveBuilderTaskDelegateKt
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$821
+instanceKlass com/android/builder/desugaring/DesugaringGraph
+instanceKlass com/android/builder/desugaring/DesugaringGraphs
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$820
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$819
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper$$Lambda$818
+instanceKlass com/android/build/gradle/internal/tasks/DexArchiveBuilderTaskDelegate$desugarIncrementalHelper$1
+instanceKlass com/google/common/base/Optional
+instanceKlass com/android/build/gradle/internal/tasks/DesugarIncrementalHelper
+instanceKlass kotlin/jvm/internal/ArrayIterator
+instanceKlass kotlin/jvm/internal/ArrayIteratorKt
+instanceKlass kotlin/sequences/FlatteningSequence$iterator$1
+instanceKlass kotlin/sequences/FlatteningSequence
+instanceKlass kotlin/collections/ArraysKt___ArraysKt$asSequence$$inlined$Sequence$1
+instanceKlass com/android/build/gradle/internal/tasks/DexArchiveBuilderTaskDelegate$OutputMapping
+instanceKlass com/android/ide/common/internal/WaitableExecutor
+instanceKlass com/android/build/gradle/internal/workeractions/WorkerActionServiceRegistry
+instanceKlass com/android/build/gradle/internal/tasks/DexArchiveBuilderTaskDelegate$Companion
+instanceKlass com/android/build/gradle/internal/tasks/DexArchiveBuilderTaskDelegate
+instanceKlass com/android/build/gradle/internal/dexing/DxDexParameters$Companion
+instanceKlass javax/management/MBeanServerInvocationHandler
+instanceKlass com/android/ide/common/workers/GradlePluginMBeans
+instanceKlass com/android/build/gradle/internal/tasks/Blocks
+instanceKlass com/android/build/gradle/internal/tasks/NewIncrementalTask$taskAction$$inlined$recordTaskAction$1
+instanceKlass com/android/build/gradle/internal/tasks/Blocks$ThrowingBlockWithReturn
+instanceKlass org/gradle/cache/internal/btree/FileBackedBlockStore$1
+instanceKlass com/android/build/gradle/internal/dependency/BaseDexingTransform$Parameters$Inject
+instanceKlass com/google/common/collect/AbstractMapBasedMultimap$AsMap$AsMapIterator
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor$$Lambda$817
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor$$Lambda$816
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor$$Lambda$815
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor$$Lambda$814
+instanceKlass org/gradle/api/internal/tasks/compile/CompileJavaBuildOperationReportingCompiler$Result
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/RecompilationNotNecessary
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/IncrementalCompilationResult
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/SourceFileChangeProcessor
+instanceKlass it/unimi/dsi/fastutil/ints/IntOpenHashSet$SetIterator
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassChanges
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/AbstractRecompilationSpecProvider$1
+instanceKlass org/gradle/internal/util/Alignment
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/ClasspathChangeDependentsFinder
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshot
+instanceKlass it/unimi/dsi/fastutil/ints/IntIterators$EmptyIterator
+instanceKlass it/unimi/dsi/fastutil/ints/IntList
+instanceKlass it/unimi/dsi/fastutil/ints/IntListIterator
+instanceKlass it/unimi/dsi/fastutil/ints/IntIterators
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/asm/ClassRelevancyFilter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassAnalysis
+instanceKlass it/unimi/dsi/fastutil/ints/IntBidirectionalIterator
+instanceKlass it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator
+instanceKlass it/unimi/dsi/fastutil/BidirectionalIterator
+instanceKlass it/unimi/dsi/fastutil/objects/ObjectIterator
+instanceKlass it/unimi/dsi/fastutil/ints/IntSets
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/CachingClassDependenciesAnalyzer$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotter$EntryVisitor
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassDependentsAccumulator
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$813
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/DependentsSet$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassSetAnalysis
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/ClassSetAnalysisData
+instanceKlass java/lang/StrictMath
+instanceKlass it/unimi/dsi/fastutil/HashCommon
+instanceKlass it/unimi/dsi/fastutil/ints/IntIterator
+instanceKlass java/util/PrimitiveIterator$OfInt
+instanceKlass java/util/PrimitiveIterator
+instanceKlass it/unimi/dsi/fastutil/Hash
+instanceKlass org/gradle/internal/serialize/IntSetSerializer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/deps/DependentsSet
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$807
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$812
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$808
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$811
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$810
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$809
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathEntrySnapshotData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$806
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$804
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$805
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache$$Lambda$803
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$802
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$801
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$797
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$799
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$800
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$795
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$798
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter$$Lambda$796
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathEntrySnapshot
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotFactory$CreateSnapshot
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotFactory$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/ClasspathEntryChangeProcessor
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/RecompilationSpec
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/CurrentCompilation
+instanceKlass org/gradle/api/internal/tasks/compile/CompileJavaBuildOperationReportingCompiler$2
+instanceKlass org/gradle/api/internal/tasks/compile/CompileJavaBuildOperationReportingCompiler$1
+instanceKlass org/gradle/api/internal/tasks/compile/CompileJavaBuildOperationType$Details
+instanceKlass org/gradle/api/internal/tasks/compile/CompileJavaBuildOperationReportingCompiler
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalResultStoringCompiler
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/SelectiveCompiler
+instanceKlass it/unimi/dsi/fastutil/ints/IntSet
+instanceKlass it/unimi/dsi/fastutil/ints/IntCollection
+instanceKlass it/unimi/dsi/fastutil/ints/IntIterable
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/PreviousCompilation
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/PreviousCompilationData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/processing/AnnotationProcessingData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotData
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilerDecorator
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/PreviousCompilationOutputAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotFactory
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotMaker
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathSnapshotProvider
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/CachingClasspathEntrySnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/DefaultClassDependenciesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/CachingClassDependenciesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilerFactory$$Lambda$794
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/IncrementalCompilerFactory$1
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/PreviousCompilationStore
+instanceKlass org/gradle/cache/internal/Stash
+instanceKlass org/gradle/cache/internal/Loader
+instanceKlass org/gradle/api/tasks/compile/JavaCompile$$Lambda$793
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathEntrySnapshotter
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/ClassDependenciesAnalyzer
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/cache/TaskScopedCompileCaches
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/SplitClasspathEntrySnapshotCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/analyzer/ClassAnalysisCache
+instanceKlass org/gradle/cache/internal/MinimalPersistentCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/DefaultClasspathEntrySnapshotCache
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/classpath/ClasspathEntrySnapshotCache
+instanceKlass org/gradle/language/base/internal/compile/CompilerUtil
+instanceKlass org/gradle/api/internal/tasks/compile/NormalizingJavaCompiler
+instanceKlass org/gradle/api/internal/tasks/compile/AnnotationProcessorDiscoveringCompiler
+instanceKlass org/gradle/api/internal/tasks/compile/ModuleApplicationNameWritingCompiler
+instanceKlass javax/tools/JavaCompiler$CompilationTask
+instanceKlass org/gradle/api/internal/tasks/compile/JdkJavaCompiler
+instanceKlass org/gradle/api/internal/tasks/AbstractJavaToolChain$JavaToolProvider
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/DefaultSourceFileClassNameConverter$$Lambda$792
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/DefaultSourceFileClassNameConverter$$Lambda$791
+instanceKlass org/gradle/api/internal/tasks/compile/incremental/recomp/DefaultSourceFileClassNameConverter
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor$1
+instanceKlass com/google/common/collect/MultimapBuilder$HashSetSupplier
+instanceKlass org/gradle/api/internal/tasks/compile/SourceClassesMappingFileAccessor
+instanceKlass org/gradle/internal/Transformers$ToStringTransformer
+instanceKlass org/gradle/api/internal/tasks/compile/MinimalJavaCompileOptions
+instanceKlass org/gradle/api/internal/tasks/compile/ForkingJavaCompileSpec
+instanceKlass org/gradle/api/internal/tasks/compile/CommandLineJavaCompileSpec
+instanceKlass org/gradle/api/internal/tasks/compile/AbstractJavaCompileSpecFactory
+instanceKlass org/gradle/api/internal/tasks/compile/CompilationSourceDirs$SourceRoots
+instanceKlass org/gradle/api/internal/tasks/compile/CompilationSourceDirs
+instanceKlass com/google/gson/internal/$Gson$Types$WildcardTypeImpl
+instanceKlass org/gradle/internal/execution/history/changes/ClasspathCompareStrategy$ChangeState
+instanceKlass org/gradle/internal/execution/history/changes/ClasspathCompareStrategy$TrackingVisitor
+instanceKlass org/gradle/internal/execution/history/changes/DefaultIncrementalInputProperties$$Lambda$790
+instanceKlass org/gradle/internal/execution/history/changes/DefaultIncrementalInputProperties$$Lambda$789
+instanceKlass com/google/common/collect/ForwardingObject
+instanceKlass org/gradle/internal/execution/history/changes/DefaultIncrementalInputProperties$$Lambda$788
+instanceKlass com/google/common/base/Predicates$CompositionPredicate
+instanceKlass org/gradle/internal/execution/history/changes/DefaultIncrementalInputProperties$$Lambda$787
+instanceKlass org/gradle/internal/execution/history/changes/DefaultIncrementalInputProperties
+instanceKlass org/gradle/internal/execution/steps/ResolveChangesStep$$Lambda$786
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass org/gradle/api/internal/changedetection/state/AbiExtractingClasspathResourceHasher$$Lambda$785
+instanceKlass com/google/common/primitives/Booleans
+instanceKlass com/google/common/collect/ComparisonChain
+instanceKlass org/gradle/internal/normalization/java/impl/Member
+instanceKlass org/gradle/internal/normalization/java/ApiClassExtractor
+instanceKlass com/google/common/collect/ImmutableList$SerializedForm
+instanceKlass org/gradle/internal/execution/steps/SkipUpToDateStep$2
+instanceKlass org/gradle/internal/execution/history/impl/DefaultOutputFilesRepository$1
+instanceKlass com/google/common/collect/Maps$9
+instanceKlass org/gradle/internal/execution/history/impl/DefaultExecutionHistoryStore$$Lambda$784
+instanceKlass org/gradle/internal/execution/steps/StoreExecutionStateStep$$Lambda$783
+instanceKlass org/gradle/internal/execution/steps/StoreExecutionStateStep$$Lambda$782
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$1
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$Operation$Result$1
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$Operation$Result
+instanceKlass org/gradle/api/internal/tasks/execution/ExecuteActionsTaskExecuter$TaskExecution$$Lambda$781
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$$Lambda$780
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$$Lambda$779
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$$Lambda$778
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$Operation$Details$1
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$Operation$Details
+instanceKlass org/gradle/internal/execution/steps/SnapshotOutputsStep$$Lambda$777
+instanceKlass org/gradle/internal/execution/steps/ExecuteStep$$Lambda$776
+instanceKlass org/gradle/internal/execution/steps/ExecuteStep$$Lambda$775
+instanceKlass org/gradle/internal/execution/steps/ExecuteStep$1
+instanceKlass org/jetbrains/kotlin/gradle/tasks/TasksUtilsKt$WhenMappings
+instanceKlass org/jetbrains/kotlin/gradle/tasks/TasksUtilsKt
+instanceKlass org/jetbrains/kotlin/compilerRunner/ReportUtilsKt
+instanceKlass org/jetbrains/kotlin/gradle/logging/GradleBufferingMessageCollector$MessageData
+instanceKlass org/jetbrains/kotlin/daemon/client/BasicCompilerServicesWithResultsFacadeServerKt$WhenMappings
+instanceKlass org/jetbrains/kotlin/daemon/client/BasicCompilerServicesWithResultsFacadeServerKt
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleCompilerServicesFacadeImpl$WhenMappings
+instanceKlass org/jetbrains/kotlin/daemon/common/CompileIterationResult$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/CompileIterationResult
+instanceKlass sun/rmi/server/DeserializationChecker
+instanceKlass org/gradle/launcher/daemon/server/DaemonRegistryUnavailableExpirationStrategy$1
+instanceKlass org/gradle/cache/internal/SimpleStateCache$1
+instanceKlass org/gradle/launcher/daemon/registry/PersistentDaemonRegistry$1
+instanceKlass org/gradle/launcher/daemon/server/CompatibleDaemonExpirationStrategy$1
+instanceKlass org/gradle/launcher/daemon/server/health/DaemonMemoryStatus$2
+instanceKlass org/gradle/launcher/daemon/server/health/DaemonMemoryStatus$1
+instanceKlass org/gradle/launcher/daemon/server/health/DaemonMemoryStatus$3
+instanceKlass org/gradle/launcher/daemon/server/health/gc/GarbageCollectionStats
+instanceKlass java/util/concurrent/LinkedBlockingDeque$AbstractItr
+instanceKlass org/gradle/process/internal/health/memory/JvmMemoryStatusSnapshot
+instanceKlass sun/rmi/transport/SequenceEntry
+instanceKlass sun/rmi/transport/DGCImpl$1
+instanceKlass sun/rmi/transport/DGCImpl$LeaseInfo
+instanceKlass sun/rmi/server/UnicastServerRef$1
+instanceKlass sun/rmi/transport/Transport$1
+instanceKlass sun/rmi/transport/Transport$$Lambda$774
+instanceKlass sun/rmi/transport/tcp/TCPTransport$ConnectionHandler$$Lambda$773
+instanceKlass sun/rmi/transport/tcp/TCPTransport$ConnectionHandler
+instanceKlass sun/rmi/transport/DGCAckHandler$1
+instanceKlass sun/rmi/transport/DGCAckHandler
+instanceKlass sun/rmi/server/UnicastServerRef$HashToMethod_Maps$1
+instanceKlass sun/rmi/transport/ObjectTable$Reaper
+instanceKlass sun/rmi/transport/tcp/TCPTransport$AcceptLoop
+instanceKlass sun/rmi/server/Util$1
+instanceKlass org/jetbrains/kotlin/daemon/common/LoopbackNetworkInterface$ServerLoopbackSocketFactory
+instanceKlass org/jetbrains/kotlin/daemon/common/IncrementalCompilerServicesFacade
+instanceKlass org/jetbrains/kotlin/daemon/common/IncrementalCompilationOptions$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/ReportSeverity$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/ReportCategory$Companion
+instanceKlass org/jetbrains/kotlin/gradle/logging/GradleBufferingMessageCollector
+instanceKlass org/jetbrains/kotlin/cli/common/messages/MessageCollector$Companion$NONE$1
+instanceKlass org/jetbrains/kotlin/cli/common/messages/MessageCollector$Companion
+instanceKlass org/jetbrains/kotlin/gradle/logging/GradlePrintingMessageCollector$WhenMappings
+instanceKlass org/jetbrains/kotlin/cli/common/messages/GradleStyleMessageRenderer$WhenMappings
+instanceKlass org/jetbrains/kotlin/cli/common/messages/MessageCollector$DefaultImpls
+instanceKlass org/jetbrains/kotlin/compilerRunner/KotlinCompilerRunnerUtils$WhenMappings
+instanceKlass org/jetbrains/kotlin/daemon/client/CompileServiceSession
+instanceKlass org/jetbrains/kotlin/daemon/client/KotlinCompilerClient$tryFindSuitableDaemonOrNewOpts$$inlined$thenBy$1
+instanceKlass org/jetbrains/kotlin/daemon/common/FileAgeComparator
+instanceKlass org/jetbrains/kotlin/daemon/client/KotlinCompilerClient$tryFindSuitableDaemonOrNewOpts$$inlined$compareBy$1
+instanceKlass org/jetbrains/kotlin/daemon/common/DaemonJVMOptionsMemoryComparator
+instanceKlass sun/rmi/server/WeakClassHashMap$ValueCell
+instanceKlass org/jetbrains/kotlin/daemon/common/DaemonWithMetadata
+instanceKlass sun/rmi/transport/ObjectEndpoint
+instanceKlass sun/rmi/transport/ObjectTable
+instanceKlass sun/rmi/transport/Target
+instanceKlass sun/rmi/transport/DGCImpl$2$1
+instanceKlass sun/rmi/transport/DGCImpl_Skel
+instanceKlass java/rmi/server/Skeleton
+instanceKlass sun/rmi/transport/DGCImpl$2$$Lambda$772
+instanceKlass sun/rmi/server/Dispatcher
+instanceKlass java/rmi/server/ServerRef
+instanceKlass sun/rmi/transport/DGCImpl$2
+instanceKlass sun/rmi/transport/DGCImpl$$Lambda$771
+instanceKlass sun/rmi/transport/DGCClient$EndpointEntry$RenewCleanThread$1
+instanceKlass sun/rmi/transport/DGCClient$EndpointEntry$1
+instanceKlass java/util/ResourceBundle$Control$1
+instanceKlass java/util/logging/Logger$1
+instanceKlass java/io/ObjectInputStream$Logging
+instanceKlass java/io/ObjectInputStream$FilterValues
+instanceKlass sun/rmi/transport/StreamRemoteCall$$Lambda$770
+instanceKlass sun/rmi/transport/DGCImpl_Stub$$Lambda$769
+instanceKlass sun/misc/ObjectInputFilter$FilterInfo
+instanceKlass java/rmi/dgc/Lease
+instanceKlass sun/rmi/transport/DGCClient$EndpointEntry$RefEntry
+instanceKlass sun/misc/GC$Daemon$1
+instanceKlass sun/misc/GC$LatencyRequest
+instanceKlass sun/misc/GC$LatencyLock
+instanceKlass sun/misc/GC
+instanceKlass sun/rmi/transport/DGCClient$EndpointEntry$RenewCleanThread
+instanceKlass sun/rmi/transport/DGCImpl
+instanceKlass java/rmi/dgc/DGC
+instanceKlass sun/rmi/transport/DGCClient$EndpointEntry
+instanceKlass java/rmi/dgc/VMID
+instanceKlass sun/rmi/transport/DGCClient
+instanceKlass sun/rmi/runtime/NewThreadAction$2
+instanceKlass sun/rmi/runtime/NewThreadAction$1
+instanceKlass sun/rmi/runtime/NewThreadAction
+instanceKlass sun/rmi/transport/tcp/TCPChannel$1
+instanceKlass java/rmi/server/RemoteObjectInvocationHandler$1
+instanceKlass sun/rmi/server/WeakClassHashMap
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilationOptions$Companion
+instanceKlass org/jetbrains/kotlin/cli/common/repl/ReplCodeLine$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/CompileService$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/RemoteInputStream
+instanceKlass org/jetbrains/kotlin/cli/common/repl/ReplCodeLine
+instanceKlass org/jetbrains/kotlin/daemon/common/RemoteOperationsTracer
+instanceKlass org/jetbrains/kotlin/daemon/common/RemoteOutputStream
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilerCallbackServicesFacade
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilationResults
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilerServicesFacadeBase
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilationOptions
+instanceKlass org/jetbrains/kotlin/daemon/common/CompileService$CallResult
+instanceKlass org/jetbrains/kotlin/daemon/common/CompileService
+instanceKlass sun/rmi/server/LoaderHandler
+instanceKlass java/rmi/server/RMIClassLoader$1
+instanceKlass java/rmi/server/RMIClassLoaderSpi
+instanceKlass java/rmi/server/RMIClassLoader
+instanceKlass java/rmi/activation/ActivationGroupDesc
+instanceKlass java/rmi/activation/ActivationDesc
+instanceKlass java/rmi/activation/ActivationID
+instanceKlass java/rmi/activation/ActivationMonitor
+instanceKlass java/rmi/activation/ActivationInstantiator
+instanceKlass java/rmi/activation/ActivationGroupID
+instanceKlass java/rmi/activation/ActivationSystem
+instanceKlass sun/rmi/server/MarshalOutputStream$1
+instanceKlass sun/rmi/transport/StreamRemoteCall
+instanceKlass java/rmi/server/RemoteCall
+instanceKlass java/net/Socket$2
+instanceKlass sun/rmi/transport/proxy/RMISocketInfo
+instanceKlass java/net/Socket$3
+instanceKlass sun/rmi/transport/tcp/TCPConnection
+instanceKlass sun/rmi/transport/Connection
+instanceKlass sun/net/spi/DefaultProxySelector$3
+instanceKlass sun/net/spi/DefaultProxySelector$NonProxyInfo
+instanceKlass sun/net/NetProperties$1
+instanceKlass sun/net/NetProperties
+instanceKlass sun/net/spi/DefaultProxySelector$1
+instanceKlass java/net/ProxySelector
+instanceKlass java/net/SocksSocketImpl$3
+instanceKlass sun/rmi/runtime/RuntimeUtil$1
+instanceKlass sun/rmi/runtime/RuntimeUtil
+instanceKlass sun/rmi/runtime/RuntimeUtil$GetInstanceAction
+instanceKlass sun/rmi/transport/tcp/TCPChannel
+instanceKlass sun/rmi/transport/Channel
+instanceKlass java/rmi/server/Operation
+instanceKlass java/rmi/server/RemoteObject
+instanceKlass java/rmi/registry/Registry
+instanceKlass java/rmi/Remote
+instanceKlass sun/rmi/server/Util
+instanceKlass sun/rmi/server/UnicastRef
+instanceKlass java/rmi/server/RemoteRef
+instanceKlass java/rmi/server/RMISocketFactory
+instanceKlass java/rmi/server/RMIServerSocketFactory
+instanceKlass sun/rmi/transport/tcp/TCPTransport$1
+instanceKlass sun/security/action/GetLongAction
+instanceKlass sun/security/action/GetIntegerAction
+instanceKlass sun/util/logging/LoggingSupport$2
+instanceKlass java/util/logging/Formatter
+instanceKlass sun/rmi/runtime/Log$LoggerLog$1
+instanceKlass sun/rmi/runtime/Log$LoggerLogFactory
+instanceKlass sun/rmi/runtime/Log$LogFactory
+instanceKlass sun/rmi/runtime/Log
+instanceKlass sun/rmi/transport/Transport
+instanceKlass sun/rmi/transport/tcp/TCPEndpoint
+instanceKlass sun/rmi/transport/Endpoint
+instanceKlass java/rmi/server/UID
+instanceKlass java/rmi/server/ObjID
+instanceKlass sun/rmi/transport/LiveRef
+instanceKlass java/rmi/registry/LocateRegistry
+instanceKlass org/jetbrains/kotlin/daemon/common/LoopbackNetworkInterface$AbstractClientLoopbackSocketFactory
+instanceKlass java/rmi/server/RMIClientSocketFactory
+instanceKlass org/jetbrains/kotlin/daemon/common/LoopbackNetworkInterface
+instanceKlass org/jetbrains/kotlin/daemon/client/DaemonReportMessage
+instanceKlass org/jetbrains/kotlin/daemon/client/KotlinCompilerClientKt
+instanceKlass kotlin/text/MatchGroup
+instanceKlass kotlin/collections/AbstractCollection
+instanceKlass kotlin/text/MatchNamedGroupCollection
+instanceKlass kotlin/text/MatchGroupCollection
+instanceKlass kotlin/text/MatcherMatchResult
+instanceKlass kotlin/text/MatchResult
+instanceKlass kotlin/text/RegexKt
+instanceKlass org/jetbrains/kotlin/daemon/common/ClientUtilsKt
+instanceKlass org/jetbrains/kotlin/daemon/common/NetworkUtilsKt
+instanceKlass org/jetbrains/kotlin/daemon/client/KotlinCompilerClient
+instanceKlass org/jetbrains/kotlin/daemon/common/Profiler$DefaultImpls
+instanceKlass org/jetbrains/kotlin/daemon/common/DummyProfiler
+instanceKlass org/jetbrains/kotlin/daemon/common/Profiler
+instanceKlass org/jetbrains/kotlin/daemon/client/DaemonReportingTargets
+instanceKlass org/jetbrains/kotlin/daemon/common/PropMapper
+instanceKlass org/jetbrains/kotlin/daemon/common/DaemonJVMOptions
+instanceKlass org/jetbrains/kotlin/daemon/common/FileSystemUtilsKt
+instanceKlass org/jetbrains/kotlin/daemon/common/FileSystem$WhenMappings
+instanceKlass org/jetbrains/kotlin/daemon/common/OSKind$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/FileSystem
+instanceKlass org/jetbrains/kotlin/daemon/common/DaemonOptions
+instanceKlass org/jetbrains/kotlin/daemon/common/DaemonParamsKt
+instanceKlass org/jetbrains/kotlin/compilerRunner/KotlinCompilerRunnerUtils
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilerId$Companion
+instanceKlass org/jetbrains/kotlin/daemon/common/CompilerId
+instanceKlass org/jetbrains/kotlin/daemon/common/OptionsGroup
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunnerKt
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerWork$Companion
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerWork
+instanceKlass kotlin/collections/CharIterator
+instanceKlass kotlin/ranges/CharRange$Companion
+instanceKlass kotlin/ranges/CharProgression$Companion
+instanceKlass kotlin/ranges/CharProgression
+instanceKlass org/jetbrains/kotlin/compilerRunner/ProjectFilesForCompilation$Companion
+instanceKlass org/jetbrains/kotlin/compilerRunner/ProjectFilesForCompilation
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerWorkArguments$Companion
+instanceKlass org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerWorkArguments
+instanceKlass org/jetbrains/kotlin/incremental/IncrementalModuleInfo$Companion
+instanceKlass org/jetbrains/kotlin/incremental/IncrementalModuleInfo
+instanceKlass org/jetbrains/kotlin/incremental/IncrementalModuleEntry$Companion
+instanceKlass org/jetbrains/kotlin/incremental/IncrementalModuleEntry
+instanceKlass java/lang/Math$RandomNumberGeneratorHolder
+instanceKlass org/jetbrains/kotlin/statistics/metrics/ConcatMetricContainer$Companion
+instanceKlass org/jetbrains/kotlin/statistics/metrics/ConcatMetricContainer
+instanceKlass kotlin/reflect/jvm/KTypesJvm
+instanceKlass kotlin/reflect/KMutableProperty1$Setter
+instanceKlass kotlin/reflect/jvm/internal/impl/types/IntersectionTypeConstructor
+instanceKlass kotlin/reflect/jvm/internal/impl/types/checker/NewTypeVariableConstructor
+instanceKlass org/jetbrains/kotlin/cli/common/arguments/ParseCommandLineArgumentsKt$parsePreprocessedCommandLineArguments$ArgumentField
+instanceKlass org/jetbrains/kotlin/cli/common/arguments/PreprocessCommandLineArgumentsKt
+instanceKlass kotlin/collections/ArrayAsCollection
+instanceKlass org/jetbrains/kotlin/compilerRunner/ArgumentUtils$$Lambda$768
+instanceKlass org/jetbrains/kotlin/utils/StringsKt
+instanceKlass org/jetbrains/kotlin/cli/common/arguments/ParseCommandLineArgumentsKt
+instanceKlass kotlin/reflect/jvm/ReflectJvmMapping
+instanceKlass kotlin/reflect/jvm/internal/KTypeImpl
+instanceKlass kotlin/reflect/full/KClasses
+instanceKlass org/jetbrains/kotlin/compilerRunner/ArgumentUtils
+instanceKlass org/jetbrains/kotlin/config/Services$Builder
+instanceKlass org/jetbrains/kotlin/config/Services$Companion
+instanceKlass org/jetbrains/kotlin/config/Services
+instanceKlass org/jetbrains/kotlin/compilerRunner/CompilerEnvironment
+instanceKlass org/jetbrains/kotlin/daemon/common/MultiModuleICSettings$Companion
