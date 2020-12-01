@@ -11,7 +11,7 @@ import com.squareup.picasso.Picasso
 class RecyclerViewAdapter(val images:List<Hits>, val listener:OnItemClickListener): RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
      var mlistener=listener;
-    
+
 
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -19,6 +19,9 @@ class RecyclerViewAdapter(val images:List<Hits>, val listener:OnItemClickListene
         var imageView: ImageView = itemView.findViewById(R.id.image_view);
         val text1: TextView = itemView.findViewById(R.id.text_view_creator);
         val text2: TextView = itemView.findViewById(R.id.text_view_likes);
+
+
+        
 
     }
 
